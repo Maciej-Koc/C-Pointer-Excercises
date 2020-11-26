@@ -17,17 +17,26 @@ int main(int argc, const char * argv[]) {
         "Green Eggs and Ham",
     };
     
-    char **bestBooks[3];
+    //Double pointer for array of different categories of books
+    char **bestBooks[4];
+    char **englishBooks[1];
     
     bestBooks[0] = &titles[0];
     bestBooks[1] = &titles[1];
     bestBooks[2] = &titles[2];
     bestBooks[3] = &titles[3];
     
-    printf("Best Book 0 is %s.\n",*bestBooks[0]);
-    printf("Best Book 1 is %s.\n",*bestBooks[1]);
-    printf("Best Book 2 is %s.\n",*bestBooks[2]);
-    printf("Best Book 3 is %s.\n",*bestBooks[3]);
+    englishBooks[0] = &titles[2];
+    
+    //Size of pointer is 8, thus you will get 32 [8 bytes * 4 elements]
+    printf("Size of titles is %lu\n",sizeof(bestBooks));
+    
+    //Using a for loop to print
+    for(int i = 0; i < sizeof(bestBooks)/sizeof(long); i++){
+        printf("Book %d is %s\n", i, *bestBooks[i]);
+    }
+    
+
 
     return 0;
 }
