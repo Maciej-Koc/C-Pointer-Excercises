@@ -41,7 +41,7 @@
 		C3AFD2D7256F2A4100C56A46 = {
 			isa = PBXGroup;
 			children = (
-				C3AFD2E2256F2A4100C56A46 /* Understanding_C_Pointers */,
+				C3AFD2E2256F2A4100C56A46 /* Excercise 1 */,
 				C3AFD2E1256F2A4100C56A46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C3AFD2E2256F2A4100C56A46 /* Understanding_C_Pointers */ = {
+		C3AFD2E2256F2A4100C56A46 /* Excercise 1 */ = {
 			isa = PBXGroup;
 			children = (
 				C3AFD2E3256F2A4100C56A46 /* main.c */,
 			);
-			path = Understanding_C_Pointers;
+			path = "Excercise 1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
